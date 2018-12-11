@@ -1,0 +1,127 @@
+{
+  "server": {
+    "hostname": "apigw94auto.camena.com",
+    "port": 8443,
+    "prefix": "",
+    "server_certs": [
+      [
+        "-----BEGIN CERTIFICATE-----",
+        "MIIC4DCCAcigAwIBAgIEXA/CWjANBgkqhkiG9w0BAQsFADAcMRowGAYDVQQDDBFzaWduZXIuY2Ft",
+        "ZW5hLmNvbTAeFw0xODEyMTExMzU3NDZaFw0xOTEyMTExMzU3NDZaMCExHzAdBgNVBAMMFmFwaWd3",
+        "OTRhdXRvLmNhbWVuYS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDYhG8+IVXQ",
+        "NqDZUKzOPM3jPpTQqmpwXqW8YCNLWFI3yLZB8+yzotLYiom8VC8i8m/xhAbSvpYOpZeN4WTZRyMp",
+        "RDw3H0lkBQfUlZxNxTcvwGu0SuhrpXK3j/okguBLgTsApv5ljKBAfWUu8PD/HNfEfXbVm2nAfi4e",
+        "KoJuWBs2S1enJ41ZAOcb36EqUTQUPQQnBY+0MPqzW7w48mjLHgyLT+HF9eqoIRgy972P6MkCpQOG",
+        "KiCOUfA5Kox+ILciSqPzKMpF6UnAtp15NGWs4W36yi8INodDTDXGFQi1f39NBafFbQYaScvto2z0",
+        "Oh8/4svGt1My67rfSczsy/kpmo9xAgMBAAGjJTAjMCEGA1UdEQQaMBiCFmFwaWd3OTRhdXRvLmNh",
+        "bWVuYS5jb20wDQYJKoZIhvcNAQELBQADggEBAFh6JXQQUFQ5iGIp4UbRwMCASy3bmAPJXXjfmCxz",
+        "1ICD6eWBW4qTWnPkdHvJJT2OuwyBa/YXbIPuhkahVVGyzukGntonaV26jRRO+P8EbMifD5fb7Bsh",
+        "uYqSeKwxqdj2Rb+RXchihaGR4Xjbi4ecYnwPt5DStYQzjQCEANbCN+UYi6nTOGQUrDnQVj8J4eaH",
+        "WEGh/gg79he5/4hEEnv+1/t6fnpc3WKoTZ7gbocYLJBNy0UPNR+4XZpQ2p0NePxYuaNw6EmcD8Se",
+        "oKaXXWBaAePSsxPiKcZN0LHhCohI/wyHEJTJ+XFT9qizFv06fBRnqb8dlY/g7STupCdGrtdg5y8=",
+        "-----END CERTIFICATE-----"
+      ]
+    ]
+  },
+  "oauth": {
+    "client": {
+      "organization": "camena",
+      "description": "What is the app used for?",
+      "client_name": "okan",
+      "client_type": "confidential",
+      "registered_by": "admin",
+      "client_custom": {},
+      "client_ids": [
+        {
+          "client_id": "3e862948-4362-42ce-b82b-2128356efa43",
+          "client_secret": "",
+          "scope": "oob",
+          "redirect_uri": "openid msso msso_register phone profile address email",
+          "environment": "ALL",
+          "status": "ENABLED",
+          "registered_by": "admin",
+          "service_ids": "",
+          "account_plan_mapping_ids": "",
+          "client_key_custom": {
+            "openid_registration": {
+              "request": {},
+              "oauth_client": true,
+              "response": {
+                "client_id": "3e862948-4362-42ce-b82b-2128356efa43",
+                "client_secret": "3e862948-4362-42ce-b82b-2128356efa43",
+                "client_secret_expires_at": "0",
+                "client_id_issued_at": 1544538399,
+                "registration_access_token": "",
+                "registration_client_uri": "",
+                "token_endpoint_auth_method": "client_secret_basic",
+                "token_endpoint_auth_signing_alg": "",
+                "application_type": "",
+                "redirect_uris": [
+                  "openid msso msso_register phone profile address email"
+                ],
+                "client_name": "okan",
+                "subject_type": "pairwise",
+                "sector_identifier_uri": "",
+                "contacts": [],
+                "response_types": [],
+                "grant_types": [],
+                "id_token_signed_response_alg": "HS256",
+                "userinfo_signed_response_alg": "",
+                "environment": "ALL",
+                "organization": "camena",
+                "master": true,
+                "description": "What is the app used for?",
+                "scope": "oob",
+                "jwks": "",
+                "jwks_uri": ""
+              }
+            }
+          }
+        }
+      ]
+    },
+    "system_endpoints": {
+      "authorization_endpoint_path": "/auth/oauth/v2/authorize",
+      "token_endpoint_path": "/auth/oauth/v2/token",
+      "token_revocation_endpoint_path": "/auth/oauth/v2/token/revoke",
+      "usersession_logout_endpoint_path": "/connect/session/logout",
+      "usersession_status_endpoint_path": "/connect/session/status"
+    },
+    "oauth_protected_endpoints": {
+      "userinfo_endpoint_path": "/openid/connect/v1/userinfo"
+    }
+  },
+  "mag": {
+    "system_endpoints": {
+      "device_register_endpoint_path": "/connect/device/register",
+      "device_renew_endpoint_path": "/connect/device/renew",
+      "device_client_register_endpoint_path": "/connect/device/register/client",
+      "device_remove_endpoint_path": "/connect/device/remove",
+      "client_credential_init_endpoint_path": "/connect/client/initialize",
+      "authenticate_otp_endpoint_path": "/auth/generateOTP"
+    },
+    "oauth_protected_endpoints": {
+      "enterprise_browser_endpoint_path": "/connect/enterprise/browser",
+      "device_list_endpoint_path": "/connect/device/list"
+    },
+    "mobile_sdk": {
+      "sso_enabled": true,
+      "location_enabled": true,
+      "location_provider": "network",
+      "msisdn_enabled": true,
+      "enable_public_key_pinning": false,
+      "trusted_public_pki": false,
+      "trusted_cert_pinned_public_key_hashes": [],
+      "client_cert_rsa_keybits": 1024
+    },
+    "ble": {
+      "msso_ble_service_uuid": "980c2f36-bde3-11e4-8dfc-aa07a5b093db",
+      "msso_ble_characteristic_uuid": "980c34cc-bde3-11e4-8dfc-aa07a5b093db",
+      "msso_ble_rssi": -80
+    }
+  },
+  "custom": {
+    "oauth_demo_protected_api_endpoint_path": "/oauth/v2/protectedapi/foo",
+    "mag_demo_products_endpoint_path": "/protected/resource/products"
+  }
+}
