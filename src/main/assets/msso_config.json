@@ -25,18 +25,18 @@
   },
   "oauth": {
     "client": {
-      "organization": "camena",
+      "organization": "hasan",
       "description": "What is the app used for?",
-      "client_name": "okan",
+      "client_name": "hasan",
       "client_type": "confidential",
       "registered_by": "admin",
       "client_custom": {},
       "client_ids": [
         {
-          "client_id": "3e862948-4362-42ce-b82b-2128356efa43",
+          "client_id": "aa73da81-2c96-4663-932c-66619fe658ec",
           "client_secret": "",
-          "scope": "oob",
-          "redirect_uri": "openid msso msso_register phone profile address email",
+          "scope": "openid msso msso_register msso_client_register phone profile address email oob",
+          "redirect_uri": "oob",
           "environment": "ALL",
           "status": "ENABLED",
           "registered_by": "admin",
@@ -47,19 +47,19 @@
               "request": {},
               "oauth_client": true,
               "response": {
-                "client_id": "3e862948-4362-42ce-b82b-2128356efa43",
-                "client_secret": "3e862948-4362-42ce-b82b-2128356efa43",
+                "client_id": "aa73da81-2c96-4663-932c-66619fe658ec",
+                "client_secret": "aa73da81-2c96-4663-932c-66619fe658ec",
                 "client_secret_expires_at": "0",
-                "client_id_issued_at": 1544538399,
+                "client_id_issued_at": 1544556667,
                 "registration_access_token": "",
                 "registration_client_uri": "",
                 "token_endpoint_auth_method": "client_secret_basic",
                 "token_endpoint_auth_signing_alg": "",
                 "application_type": "",
                 "redirect_uris": [
-                  "openid msso msso_register phone profile address email"
+                  "oob"
                 ],
-                "client_name": "okan",
+                "client_name": "hasan",
                 "subject_type": "pairwise",
                 "sector_identifier_uri": "",
                 "contacts": [],
@@ -68,10 +68,10 @@
                 "id_token_signed_response_alg": "HS256",
                 "userinfo_signed_response_alg": "",
                 "environment": "ALL",
-                "organization": "camena",
+                "organization": "hasan",
                 "master": true,
                 "description": "What is the app used for?",
-                "scope": "oob",
+                "scope": "openid msso msso_register msso_client_register phone profile address email oob",
                 "jwks": "",
                 "jwks_uri": ""
               }
